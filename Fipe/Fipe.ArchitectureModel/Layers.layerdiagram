@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<layerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="914a9041-0327-485b-958b-889d20c5ca9f" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/LayerDesigner">
+  <layers>
+    <layer Id="2f9019fe-8c37-40e8-89ff-dadcf7a96649" name="Web API" />
+    <layer Id="d24a40b7-9055-42c6-9029-8ac0f6bd2611" name="Models&#xD;&#xA;" />
+    <layer Id="ef0361bd-1156-47d5-a610-05a391a4ab1d" name="QueryRepository" />
+  </layers>
+</layerModel>
