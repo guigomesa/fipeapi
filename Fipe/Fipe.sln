@@ -32,6 +32,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fipe.Repository.EntityFrame
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fipe.Repository.EntityFramework.DbContextManagement", "Fipe.Repository.EntityFramework.DbContextManagement\Fipe.Repository.EntityFramework.DbContextManagement.csproj", "{1E16CCF2-44C4-451F-9C57-9C08B6E45332}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fipe.Crawler.AzureWebJob", "Fipe.Crawler.AzureWebJob\Fipe.Crawler.AzureWebJob.csproj", "{02BDCCB9-B999-4580-A2C1-879E4D78130B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -82,6 +84,10 @@ Global
 		{1E16CCF2-44C4-451F-9C57-9C08B6E45332}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1E16CCF2-44C4-451F-9C57-9C08B6E45332}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1E16CCF2-44C4-451F-9C57-9C08B6E45332}.Release|Any CPU.Build.0 = Release|Any CPU
+		{02BDCCB9-B999-4580-A2C1-879E4D78130B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02BDCCB9-B999-4580-A2C1-879E4D78130B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02BDCCB9-B999-4580-A2C1-879E4D78130B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02BDCCB9-B999-4580-A2C1-879E4D78130B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
