@@ -13,11 +13,11 @@ namespace Fipe.Application
 
         private readonly IUnitOfWorkFactory _unitOfWorkFactory;
 
-        public BrandCrawlerApplicationService(IBrandCrawler crawler)
+        public BrandCrawlerApplicationService(IBrandCrawler crawler, IBrandCacheRepository cacheRepository, IUnitOfWorkFactory unitOfWorkFactory)
         {
             _crawler = crawler;
-            //_cacheRepository = cacheRepository;
-            //_unitOfWorkFactory = unitOfWorkFactory;
+            _cacheRepository = cacheRepository;
+            _unitOfWorkFactory = unitOfWorkFactory;
         }
 
         public void CrawlAndUpdateCacheRepository()

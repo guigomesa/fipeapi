@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{0FB2CF31-11B0-4EF7-B05A-27FFA780CA66}</ProjectGuid>
+    <ProjectGuid>{1E16CCF2-44C4-451F-9C57-9C08B6E45332}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Fipe.IOC.NinjectConfiguration</RootNamespace>
-    <AssemblyName>Fipe.IOC.NinjectConfiguration</AssemblyName>
+    <RootNamespace>Fipe.Repository.EntityFramework.DbContextManagement</RootNamespace>
+    <AssemblyName>Fipe.Repository.EntityFramework.DbContextManagement</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
@@ -38,13 +38,10 @@
     <Reference Include="EntityFramework.SqlServer">
       <HintPath>..\packages\EntityFramework.6.1.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
-    <Reference Include="Ninject, Version=3.2.0.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
-      <Private>True</Private>
-      <HintPath>..\packages\Ninject.3.2.2.0\lib\net45-full\Ninject.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -52,7 +49,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ApplicationModule.cs" />
+    <Compile Include="FipeDbContextManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -60,34 +57,6 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Fipe.Application.Contracts\Fipe.Application.Contracts.csproj">
-      <Project>{3338ab68-fbd4-41ca-9c5a-20603c80914a}</Project>
-      <Name>Fipe.Application.Contracts</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Fipe.Application\Fipe.Application.csproj">
-      <Project>{27bb5105-ab1f-4b0c-aefd-1228240e852b}</Project>
-      <Name>Fipe.Application</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Fipe.Crawler\Fipe.Crawler.csproj">
-      <Project>{e802ec68-c405-43f7-a9f6-8e6f74dbbb10}</Project>
-      <Name>Fipe.Crawler</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Fipe.Domain\Fipe.Domain.csproj">
-      <Project>{78ef7f21-c05c-46f2-99ad-83f7df2a77f9}</Project>
-      <Name>Fipe.Domain</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Fipe.Infrastructure.Adapter.AutoMapper\Fipe.Infrastructure.Adapter.AutoMapper.csproj">
-      <Project>{39567998-4cc4-47c1-9b30-a1acca5d7ede}</Project>
-      <Name>Fipe.Infrastructure.Adapter.AutoMapper</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Fipe.Infrastructure\Fipe.Infrastructure.csproj">
-      <Project>{0a56d204-5c4b-44a6-941d-f8388f1df5a9}</Project>
-      <Name>Fipe.Infrastructure</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Fipe.Repository.EntityFramework.DbContextManagement\Fipe.Repository.EntityFramework.DbContextManagement.csproj">
-      <Project>{1e16ccf2-44c4-451f-9c57-9c08b6e45332}</Project>
-      <Name>Fipe.Repository.EntityFramework.DbContextManagement</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Fipe.Repository.EntityFramework\Fipe.Repository.EntityFramework.csproj">
       <Project>{722d8f0a-deb3-4389-9c52-c632b6321344}</Project>
       <Name>Fipe.Repository.EntityFramework</Name>

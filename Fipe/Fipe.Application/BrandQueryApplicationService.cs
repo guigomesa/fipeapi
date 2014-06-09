@@ -9,18 +9,17 @@ namespace Fipe.Application
     public class BrandQueryApplicationService : IBrandQueryApplicationService
     {
         private readonly IBrandCacheRepository _cacheRepository;
-        private readonly IBrandCrawler _crawler;
         private readonly ITypeAdapterFactory _adapterFactory;
 
-        public BrandQueryApplicationService(IBrandCrawler crawler, ITypeAdapterFactory adapterFactory)
+        public BrandQueryApplicationService(IBrandCacheRepository cacheRepository, ITypeAdapterFactory adapterFactory)
         {
             _adapterFactory = adapterFactory;
-            _crawler = crawler;
+            _cacheRepository = cacheRepository;
         }
 
         public IEnumerable<BrandViewModel> GetAllBrands()
         {
-            var allBrands = _crawler.FindAllBrands();
+            var allBrands = _cacheRepository.GetAllBrands();
 
             return allBrands.ProjectedAs<List<BrandViewModel>>(_adapterFactory);
         }

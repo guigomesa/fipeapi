@@ -28,6 +28,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fipe.Web.API", "Fipe.Web.AP
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fipe.IOC.NinjectConfiguration", "Fipe.IOC.NinjectConfiguration\Fipe.IOC.NinjectConfiguration.csproj", "{0FB2CF31-11B0-4EF7-B05A-27FFA780CA66}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fipe.Repository.EntityFramework", "Fipe.Repository.EntityFramework\Fipe.Repository.EntityFramework.csproj", "{722D8F0A-DEB3-4389-9C52-C632B6321344}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fipe.Repository.EntityFramework.DbContextManagement", "Fipe.Repository.EntityFramework.DbContextManagement\Fipe.Repository.EntityFramework.DbContextManagement.csproj", "{1E16CCF2-44C4-451F-9C57-9C08B6E45332}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -70,6 +74,14 @@ Global
 		{0FB2CF31-11B0-4EF7-B05A-27FFA780CA66}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0FB2CF31-11B0-4EF7-B05A-27FFA780CA66}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0FB2CF31-11B0-4EF7-B05A-27FFA780CA66}.Release|Any CPU.Build.0 = Release|Any CPU
+		{722D8F0A-DEB3-4389-9C52-C632B6321344}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{722D8F0A-DEB3-4389-9C52-C632B6321344}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{722D8F0A-DEB3-4389-9C52-C632B6321344}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{722D8F0A-DEB3-4389-9C52-C632B6321344}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E16CCF2-44C4-451F-9C57-9C08B6E45332}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E16CCF2-44C4-451F-9C57-9C08B6E45332}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E16CCF2-44C4-451F-9C57-9C08B6E45332}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E16CCF2-44C4-451F-9C57-9C08B6E45332}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
